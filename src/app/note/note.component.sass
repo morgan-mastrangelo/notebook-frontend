@@ -1,19 +1,20 @@
 main
-    display: flex
-    flex-wrap: wrap
-    justify-content: center
-    height: 100vh
-    overflow: auto
+    padding: 24px
 
-    .grid
-        display: flex
-        justify-content: center
-        align-items: center
-        width: 33%
-        height: 25vw
+    .card
+        position: relative
+        display: inline-block
+        width: 288px
+        height: 200px
+        padding: 24px
+        margin: 16px
+        background: rgb(255, 253, 117)
 
-        .card
-            width: 70%
-            height: 70%
-            padding: 24px
-            background: rgb(255, 253, 117)
+    .card::after
+        content: ""
+        position: absolute
+        top: 0
+        right: 0
+        border: 24px solid transparent
+        border-top: 24px solid rgb(226, 218, 143)
+        border-right: 24px solid rgb(156, 150, 93)
