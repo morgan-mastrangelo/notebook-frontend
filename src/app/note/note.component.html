@@ -1,5 +1,7 @@
 <main>
     <div class="card" *ngFor="let note of staticData">
         <h2>{{ note.title }}</h2>
+        <span>{{ note.category }}</span>
+        <p>{{ note.content }}</p>
     </div>
 </main>
