@@ -1,29 +1,58 @@
 main
     padding: 24px
 
-    .card
-        position: relative
-        display: inline-block
-        width: 288px
-        height: 200px
-        padding: 24px
-        margin: 16px
-        overflow: auto
-        background: rgb(255, 253, 117)
-
-        h2
-            display: inline
-
-        span
-            font-size: 12px
-            margin-left: 4px
-            color: gray
-
-    .card::after
-        content: ""
+.card
+    position: relative
+    display: inline-block
+    width: 288px
+    height: 200px
+    padding: 24px
+    margin: 16px
+    overflow: auto
+    background: rgb(255, 253, 117)
+    h2
+        margin: 0
+    span
+        font-size: 12px
+        margin-left: 4px
+        color: gray
+    .actions
         position: absolute
-        top: 0
+        bottom: 0
         right: 0
-        border: 24px solid transparent
-        border-top: 24px solid rgb(226, 218, 143)
-        border-right: 24px solid rgb(156, 150, 93)
+        padding: 24px
+
+        fa-icon
+            font-size: 20px
+            margin: 4px
+            transition: all .3s
+            &:hover
+                cursor: pointer
+                color: gray
+
+.card::after
+    content: ""
+    position: absolute
+    top: 0
+    right: 0
+    border: 24px solid transparent
+    border-top: 24px solid rgb(226, 218, 143)
+    border-right: 24px solid rgb(156, 150, 93)
+
+.card-add
+    position: relative
+    display: inline-block
+    width: 288px
+    height: 200px
+    padding: 24px
+    margin: 16px
+    overflow: auto
+    background: rgb(255, 253, 117)
+
+    >div
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 48px
+        height: 100%
+        cursor: pointer

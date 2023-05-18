@@ -1,0 +1,66 @@
+.modal-container
+    display: flex
+    justify-content: center
+    align-items: center
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(0,0,0,0.5)
+
+    .modal
+        min-width: 320px
+        padding: 32px
+        text-align: right
+        background: white
+        animation: scale_anim .5s
+        input
+            position: relative
+            display: block
+            width: 300px
+            padding: 10px
+            margin-top: 16px
+            border: 2px solid #4caf
+            outline: none
+            transition: all .5s
+            &:focus
+                border: 2px solid dodgerblue
+        input:nth-child(1)
+            font-size: 24px
+            font-weight: bold
+        textarea
+            font-family: Arial, Helvetica, sans-serif
+            font-size: 18px
+            display: block
+            position: relative
+            width: 300px
+            height: 160px
+            padding: 10px
+            margin-top: 16px
+            border: 2px solid #4caf
+            outline: none
+            transition: all .5s
+            &:focus
+                border: 2px solid dodgerblue
+        button
+            font-size: 20px
+            font-weight: bold
+            width: 128px
+            padding: 12px
+            margin-top: 16px
+            outline: none
+            border: none
+            background: #4caf50
+            color: white
+            transition: all .3s
+
+            &:hover
+                cursor: pointer
+                background: dodgerblue
+
+    @keyframes scale_anim
+        from
+            transform: scale(0)
+        to
+            transform: scale(1)

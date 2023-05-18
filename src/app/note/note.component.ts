@@ -1,11 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { faPlus, faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-note',
   templateUrl: './note.component.html',
   styleUrls: ['./note.component.sass']
 })
-export class NoteComponent {
+export class NoteComponent implements OnInit {
+  plusIcon = faPlus
+  editIcon = faEdit
+  deleteIcon = faTrash
+
+  constructor() { }
+
+  ngOnInit() {}
+
   staticData = [
     {
       title: "Schedule 1",

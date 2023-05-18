@@ -6,17 +6,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoteComponent } from './note/note.component';
 import { HomeComponent } from './home/home/home.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { EditmodalComponent } from './note/editmodal/editmodal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NoteComponent,
-    HomeComponent
+    HomeComponent,
+    EditmodalComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,5 +3,18 @@
         <h2>{{ note.title }}</h2>
         <span>{{ note.category }}</span>
         <p>{{ note.content }}</p>
+
+        <div class="actions">
+            <fa-icon [icon]="editIcon"></fa-icon>
+            <fa-icon [icon]="deleteIcon"></fa-icon>
+        </div>
     </div>
+    
+    <div class="card-add">
+        <div>
+            <fa-icon [icon]="plusIcon"></fa-icon>
+        </div>
+    </div>
+
+    <app-editmodal [show]="false"></app-editmodal>
 </main>
